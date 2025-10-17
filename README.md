@@ -12,7 +12,7 @@ The project covers the design, configuration, and deployment of multiple AI-driv
 
 ## 🧩 Architecture & Flow
 
-### Architecture Diagram
+
 ![Architecture Diagram]![1293e713-9775-4dae-8425-b83646792475](https://github.com/user-attachments/assets/605ea245-9918-4553-beea-5326da54f8f9)
 
 
@@ -27,18 +27,35 @@ The project covers the design, configuration, and deployment of multiple AI-driv
 ## 🐍 Lambda Function
 
 ```python
-def lambda_handler(event, context):
-    intent = event['currentIntent']['name']
-    if intent == 'OrderStatus':
-        return check_order_status(event)
-    elif intent == 'GreetingIntent':
-        return {
-            "dialogAction": {
-                "type": "Close",
-                "fulfillmentState": "Fulfilled",
-                "message": {"contentType": "PlainText", "content": "Hello! How can I assist you today?"}
-            }
+def CheckBalance(intent_request):
+    session_attributes = get_session_attributes(intent_request)
+    slots = get_slots(intent_request)
+    account = get_slot(intent_request, 'accountType')
+    #The account balance in this case is a random number
+    #Here is where you could query a system to get this information
+    balance = str(random_num())
+    text = "Thank you. The balance on your "+account+" account is $"+balance+" dollars."
+    message =  {
+            'contentType': 'PlainText',
+            'content': text
         }
+    fulfillment_state = "Fulfilled"    
+    return close(intent_request, session_attributes, fulfillment_state, message)   
+
+def FollowupCheckBalance(intent_request):
+    session_attributes = get_session_attributes(intent_request)
+    slots = get_slots(intent_request)
+    account = get_slot(intent_request, 'accountType')
+    #The account balance in this case is a random number
+    #Here is where you could query a system to get this information
+    balance = str(random_num())
+    text = "Thank you. The balance on your "+account+" account is $"+balance+" dollars."
+    message =  {
+            'contentType': 'PlainText',
+            'content': text
+        }
+    fulfillment_state = "Fulfilled"    
+    return close(intent_request, session_attributes, fulfillment_state, message)
 ```
 
 ---
@@ -46,16 +63,23 @@ def lambda_handler(event, context):
 ## 💡 Flow with Screenshots
 
 ### Step 1: Define Intents
-![Lex Intents](screenshots/lex-intents.png)
+<img width="2505" height="868" alt="image" src="https://github.com/user-attachments/assets/0516e06b-a22d-4b47-9f86-6dc2f396e8c8" />
+
 
 ### Step 2: Lambda Integration
-![Lambda Function](screenshots/lambda-code.png)
+<img width="2542" height="1183" alt="lambda code" src="https://github.com/user-attachments/assets/cd7d593c-b37f-4f99-b21f-25b0abc441ef" />
+
 
 ### Step 3: Testing in Lex Console
-![Chat Demo](screenshots/chat-demo.png)
+<img width="545" height="810" alt="Screenshot 2025-10-16 162440" src="https://github.com/user-attachments/assets/8515f19d-91da-47cc-bf2f-6e073b6fac07" />
+<img width="602" height="1034" alt="image" src="https://github.com/user-attachments/assets/3b8cbdfb-a0de-424f-80f9-3b9a96dedf69" />
+<img width="720" height="1272" alt="image" src="https://github.com/user-attachments/assets/35060803-98f7-4bc7-bec8-3f816e9b0306" />
+
+
 
 ### Step 4: Monitoring with CloudWatch
-![CloudWatch Logs](screenshots/cloudwatch-logs.png)
+<img width="1362" height="1145" alt="image" src="https://github.com/user-attachments/assets/fffea021-7026-48cf-bae2-afbda7174aa5" />
+
 
 ---
 
@@ -71,6 +95,6 @@ def lambda_handler(event, context):
 
 ## 👩‍💻 Author
 **Vaishnavi Mule**  
-Data & AI Analyst | AWS Conversational AI Developer | Snowflake Certified  
-📍 Chicago, IL  
+Data & AI Analyst | Snowflake Certified  
+
 🔗 [LinkedIn](https://linkedin.com/in/vaishnavimule) • [GitHub](https://github.com/vaishnavimule)
