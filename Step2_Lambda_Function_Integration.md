@@ -2,6 +2,7 @@
 <img width="669" height="916" alt="image" src="https://github.com/user-attachments/assets/dc1ab5f2-5498-4615-8a81-08b98bd38063" />
 
 <img width="1052" height="502" alt="image" src="https://github.com/user-attachments/assets/edd7d84d-a292-4c2d-ab6a-ca6b624b50bc" />
+
 What’s the balance in my account?
 Check my account balance
 What’s the balance in my {accountType} account?
