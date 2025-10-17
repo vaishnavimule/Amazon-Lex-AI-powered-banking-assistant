@@ -13,7 +13,8 @@ The project covers the design, configuration, and deployment of multiple AI-driv
 ## 🧩 Architecture & Flow
 
 ### Architecture Diagram
-![Architecture Diagram]![1760725747238](image/README_AWS_Lex_AI_Project/1760725747238.png)
+![Architecture Diagram]![1293e713-9775-4dae-8425-b83646792475](https://github.com/user-attachments/assets/605ea245-9918-4553-beea-5326da54f8f9)
+
 
 1. **User Input:** The user interacts with the chatbot through the Lex interface.
 2. **Amazon Lex:** Detects the intent, extracts slots, and triggers Lambda.
