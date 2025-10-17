@@ -6,7 +6,12 @@ This repository demonstrates a complete end-to-end **Conversational AI system** 
 ---
 
 ## 🌐 Overview
-The project covers the design, configuration, and deployment of multiple AI-driven chatbots capable of handling different intents and integrations.
+A fully functioning AI chatbot that can:
+
+- Greet users and understand different ways people ask for help
+- Recognize specific banking terms and account types
+- Retrieve account balances using backend logic
+- Remember user information to create smoother conversations
 
 ---
 
