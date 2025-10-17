@@ -18,7 +18,7 @@ A fully functioning AI chatbot that can:
 ## 🧩 Architecture & Flow
 
 
-![Architecture Diagram]![1293e713-9775-4dae-8425-b83646792475](https://github.com/user-attachments/assets/605ea245-9918-4553-beea-5326da54f8f9)
+![1293e713-9775-4dae-8425-b83646792475](https://github.com/user-attachments/assets/605ea245-9918-4553-beea-5326da54f8f9)
 
 
 1. **User Input:** The user interacts with the chatbot through the Lex interface.
