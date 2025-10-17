@@ -1,3 +1,8 @@
+# 🧠 Step 2 – Add Custom Slots to Your Lex Chatbot
+
+
+
+---
 💬 Set up an intent that helps users check their account balance
 <img width="669" height="916" alt="image" src="https://github.com/user-attachments/assets/dc1ab5f2-5498-4615-8a81-08b98bd38063" />
 
