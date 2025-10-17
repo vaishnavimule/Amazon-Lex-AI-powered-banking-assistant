@@ -1,4 +1,4 @@
-# 🧠 Step 1 – Amazon Lex Intent Setup
+# 🧠 Step 1 – Amazon Lex Setup
 
 This step focuses on configuring **Amazon Lex** for the banking assistant.
 
