@@ -20,3 +20,5 @@ Balance in {accountType}
 
 
 🧪 Build and test your bot using text and speech
+
+<img width="768" height="690" alt="image" src="https://github.com/user-attachments/assets/7295b3b6-e9e4-4e64-85fc-1c941054c302" />
