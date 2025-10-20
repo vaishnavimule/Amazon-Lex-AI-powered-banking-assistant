@@ -102,4 +102,4 @@ def FollowupCheckBalance(intent_request):
 **Vaishnavi Mule**  
 Data & AI Analyst | Snowflake Certified  
 
-🔗 [LinkedIn](https://linkedin.com/in/vaishnavimule) • [GitHub](https://github.com/vaishnavimule)
+🔗 [LinkedIn](https://linkedin.com/in/vaishnavimule18) • [GitHub](https://github.com/vaishnavimule)
